@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-golfGreen text-golfWhite px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-300;
+  }
+  
+  .btn-secondary {
+    @apply bg-golfGold text-golfWhite px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-300;
+  }
+  
+  .section-padding {
+    @apply py-16 px-4 sm:px-6 lg:px-8;
+  }
+  
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+}

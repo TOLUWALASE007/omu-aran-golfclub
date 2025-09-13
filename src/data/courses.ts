@@ -1,0 +1,21 @@
+// Sample data for holes (could be extended)
+export const courseHoles = [
+  { number: 1, par: 4, length: "420 yds", description: "Straight fairway with bunkers left and right." },
+  { number: 2, par: 3, length: "160 yds", description: "Short par 3 with elevated green." },
+  { number: 3, par: 5, length: "520 yds", description: "Dogleg left, risk-reward hole." },
+  { number: 4, par: 4, length: "380 yds", description: "Narrow fairway with water hazard on the right." },
+  { number: 5, par: 3, length: "180 yds", description: "Challenging par 3 over water to elevated green." },
+  { number: 6, par: 4, length: "450 yds", description: "Long par 4 with strategic bunker placement." },
+  { number: 7, par: 5, length: "580 yds", description: "Signature hole with stunning views of the clubhouse." },
+  { number: 8, par: 4, length: "410 yds", description: "Dogleg right with trees lining both sides." },
+  { number: 9, par: 3, length: "170 yds", description: "Beautiful par 3 with undulating green." },
+  { number: 10, par: 4, length: "430 yds", description: "Challenging start to the back nine." },
+  { number: 11, par: 5, length: "550 yds", description: "Long par 5 with multiple water hazards." },
+  { number: 12, par: 4, length: "390 yds", description: "Strategic hole requiring accurate tee shot." },
+  { number: 13, par: 3, length: "190 yds", description: "Long par 3 with deep bunkers protecting the green." },
+  { number: 14, par: 4, length: "440 yds", description: "Uphill par 4 with challenging approach shot." },
+  { number: 15, par: 5, length: "560 yds", description: "Risk-reward par 5 with reachable green in two." },
+  { number: 16, par: 4, length: "400 yds", description: "Narrow fairway with out-of-bounds on the left." },
+  { number: 17, par: 3, length: "150 yds", description: "Short par 3 with tricky pin positions." },
+  { number: 18, par: 4, length: "460 yds", description: "Championship finishing hole with water in play." },
+];
