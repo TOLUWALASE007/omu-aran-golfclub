@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from 'react-helmet-async'
 import SkipToContent from "./components/SkipToContent";
 import Home from "./pages/Home"; // homepage we'll build

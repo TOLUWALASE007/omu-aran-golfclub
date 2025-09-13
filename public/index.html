@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omu-Aran Golf Club - Welcome</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #2E7D32, #1B5E20);
+            color: white;
+            min-height: 100vh;
+        }
+        
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                        url('https://images.unsplash.com/photo-1535131749006-b7f58c99034b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .hero h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 4rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+        }
+        
+        .button {
+            background: #C9A24B;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background 0.3s;
+            margin: 10px;
+        }
+        
+        .button:hover {
+            background: #B8941F;
+        }
+        
+        .nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0,0,0,0.8);
+            padding: 15px 0;
+            z-index: 1000;
+        }
+        
+        .nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav a:hover {
+            color: #C9A24B;
+        }
+        
+        .content {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section {
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        
+        .section h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #C9A24B;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .feature {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .feature h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #C9A24B;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+            }
+            
+            .nav ul {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#membership">Membership</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section id="home" class="hero">
+        <h1>Omu-Aran Golf Club</h1>
+        <p>Experience the finest golfing in Nigeria with our world-class facilities and breathtaking course</p>
+        <a href="#membership" class="button">Join Our Club</a>
+        <a href="#courses" class="button">View Courses</a>
+    </section>
+    
+    <div class="content">
+        <section id="about" class="section">
+            <h2>About Our Club</h2>
+            <p>Founded in 1990, Omu-Aran Golf Club has been providing exceptional golfing experiences for over three decades. Our championship course offers challenging play for golfers of all skill levels.</p>
+        </section>
+        
+        <section id="courses" class="section">
+            <h2>Our Championship Course</h2>
+            <p>18-hole championship course designed to challenge and delight golfers of all abilities. Featuring pristine greens, strategic bunkers, and stunning natural beauty.</p>
+        </section>
+        
+        <section id="membership" class="section">
+            <h2>Membership Options</h2>
+            <div class="features">
+                <div class="feature">
+                    <h3>Individual Membership</h3>
+                    <p>Perfect for individual golfers seeking full access to our facilities and course.</p>
+                </div>
+                <div class="feature">
+                    <h3>Family Membership</h3>
+                    <p>Great for families who want to enjoy golf together with special family rates.</p>
+                </div>
+                <div class="feature">
+                    <h3>Corporate Membership</h3>
+                    <p>Ideal for businesses looking to entertain clients and build relationships.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="events" class="section">
+            <h2>Upcoming Events</h2>
+            <p>Join us for exciting tournaments, social events, and special occasions throughout the year.</p>
+        </section>
+        
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <p>Ready to join our club or have questions? Get in touch with us today!</p>
+            <a href="mailto:info@omuarangolfclub.com" class="button">Email Us</a>
+        </section>
+    </div>
+    
+    <script>
+        // Simple smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Add some interactivity
+        console.log('Omu-Aran Golf Club website loaded successfully!');
+    </script>
+</body>
+</html>
